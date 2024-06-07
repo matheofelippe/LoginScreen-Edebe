@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
+
+:root{
+    --span-color: #C5C3C3;
+    --bg-color: #fff;
+    --bg-banner: #ebebeb;
+}
+
+main{
+    background-color: var(--bg-color);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerArea{
+    height: 100vh;
+    background-color: var(--bg-banner);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginArea{
+    padding-left: 100px;
+}
+
+/*Header*/
+
+.header{
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2{
+    color: #4C4C4C;
+    font-weight: 500;
+}
+
+.edebeHighlight{
+    color: #EB1118 !important;
+    font-weight: 500;
+}
+
+.loginIntructions{
+    color: #c2bdbd;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+/*Login fields*/
+
+.loginFields{
+    display: flex;
+    flex-direction: column;
+}
+
+.loginFields img{
+    position: absolute;
+    width: 20px;
+}
+
+.emailField, .passwordField{
+    padding-left: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--bg-banner);
+    margin-bottom: 40px;
+}
