@@ -16,8 +16,6 @@ main{
     background-color: var(--bg-color);
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 .bannerArea{
@@ -30,6 +28,11 @@ main{
 }
 
 .loginArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
     padding: 0 100px 0;
 }
 
@@ -65,10 +68,10 @@ main{
 .loginFields{
     display: flex;
     flex-direction: column;
+    width: 80%;
 }
 
 .loginFields img{
-    position: absolute;
     width: 20px;
 }
 
@@ -89,6 +92,12 @@ main{
     margin-bottom: 30px;
 }
 
+.emailField:focus, .passwordField:focus {
+    border: 2px solid #EB1118;
+    background-color: #fff;
+    outline: none;
+}
+
 .acess{
     display: flex;
     flex-direction: column;
@@ -101,7 +110,7 @@ main{
     padding: 15px;
     border: none;
     border-radius: 50px;
-    margin: 0 65px 0;
+
     cursor: pointer;
 }
 
@@ -114,18 +123,20 @@ main{
 
 .acess span a{
     color: #EB1118;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
 }
 
 .terms{
+    position: fixed;
     display: flex;
     justify-content: center;
     gap: 120px;
+    bottom: 0;
+    padding-bottom: 40px;
 }
 
 .terms a{
     color: #4C4C4C;
     text-decoration: none;
-    
 }
